@@ -3,6 +3,9 @@ class Ticket:
         self.name = name
         self.base_price = base_price
  
+    def get_name(self):
+        return self._name
+    
     def price(self):
         return self.base_price
  
