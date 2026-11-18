@@ -21,3 +21,7 @@ class GroupTicket(Ticket):
 
     def price(self):
         return super().price() * self._people * 0.8
+
+ ##student = StudentTicket("Museum", 150)
+ ##group = GroupTicket("Zoo", 300 ,4)
+ ##print(student.get_name(),group.price())
