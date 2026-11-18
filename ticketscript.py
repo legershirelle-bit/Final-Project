@@ -18,3 +18,6 @@ class GroupTicket(Ticket):
     def _init_(self,name,base_price,people):
         super()._init_(name,base_price)
         self.people = people
+
+    def price(self):
+        return super().price() * self._people * 0.8
